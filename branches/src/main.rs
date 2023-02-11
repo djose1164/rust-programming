@@ -1,9 +1,10 @@
 fn main() {
-   let number = 7;
+    let da = "Daniel";
+    let dan = "Daniel";
 
-   if number < 5 {
-        println!("Condition was true");
-   } else {
-        println!("Condition was false");
-   }
+    if da == "Jose" {
+        println!("Names are equal");
+    } else {
+        println!("{dan} is not");
+    }
 }
