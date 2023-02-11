@@ -1,10 +1,7 @@
 fn main() {
-    let a = [10, 20, 30, 40, 50];
-    let mut idx = 0;
-
-    while idx < 5 {
-        println!("the values is: {}", a[idx]);
-
-        idx += 1;
+    for n in (1..4).rev() {
+        println!("{n}");
     }
+
+    println!("LIFT OFF!!!");
 }
