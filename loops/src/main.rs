@@ -1,11 +1,10 @@
 fn main() {
-    let mut number = 3;
- 
-    while number != 0 {
-        println!("{number}");
+    let a = [10, 20, 30, 40, 50];
+    let mut idx = 0;
 
-        number -= 1;
+    while idx < 5 {
+        println!("the values is: {}", a[idx]);
+
+        idx += 1;
     }
-
-    println!("Lift off!");
 }
