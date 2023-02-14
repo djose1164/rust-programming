@@ -1,6 +1,8 @@
+use std::io::{self, Write};
 fn main() {
     println!("***The Fibo generator***");
-    println!("Enter a number (be careful, this can take some time): ");
+    print!("Enter a number (be careful, this can take some time): ");
+    io::stdout().flush().unwrap();
 
     let mut number = String::new();
     std::io::stdin()
