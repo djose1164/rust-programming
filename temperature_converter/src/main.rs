@@ -14,13 +14,13 @@ fn get_degrees() -> i32 {
 
     let mut degress = String::new();
     std::io::stdin()
-            .read_line(&mut degress)
-            .expect("Failed to read line");
+        .read_line(&mut degress)
+        .expect("Failed to read line");
 
     let degress: i32 = degress
-            .trim()
-            .parse()
-            .expect("Well, be sure you've typed in a number!");
+        .trim()
+        .parse()
+        .expect("Well, be sure you've typed in a number!");
 
     degress
 }
@@ -31,7 +31,7 @@ fn main() {
             \tYour converter of F to C and viceversa!\n\n\
             Type in the number of the option:       \n\
             1. C to F                               \n\
-            2. F to C               \n\
+            2. F to C                               \n\
             3. exit"
     );
     std::io::stdout().flush().unwrap();
@@ -51,18 +51,20 @@ fn main() {
             .parse()
             .expect("Well, be sure you've typed in a number!");
 
-        if opt == 3 { break; }
+        if opt == 3 {
+            break;
+        }
 
         match opt {
             1 => {
                 let degrees = get_degrees();
                 println!("{degrees}°C to °F is: {}°F", celsius_to_f(degrees));
-            },
+            }
             2 => {
                 let degrees = get_degrees();
                 println!("{degrees}°F to °C is: {}°C", fahrenheit_to_c(degrees));
-            },
-            _ => println!("Invalid option.")
+            }
+            _ => println!("Invalid option."),
         }
     }
 }
